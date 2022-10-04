@@ -12,5 +12,6 @@ I build a website to inform other about myself and also show off some javascript
 + 
 
 #### Reflections and Comments  
-Consider including the answers to your daily journal and submission questions here  
-This is also a good place to reflect on the tools and resources used and learned  
+1) Some good Lesson Learned. I was invoking toLowerCase on my prompt but I left off the () so it wasn't working. I guess it is a good practice to verify in smaller steps.
+2) Another one, I want to make a function but I dont know understand how the scope of the function works so that it can update a global counter. Function can reach outside of itself and get variable.
+3) Control + D in VS Code to select multiple of same word is useful.
