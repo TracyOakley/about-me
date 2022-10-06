@@ -6,18 +6,21 @@ alert(userName + ', welcome to my (Tracy Oakley) website!');
 
 let counter = 0;
 
-let isFrom = prompt('Am I originally from LA?').toLowerCase();
+question_1();
 
-if(isFrom === 'yes' || isFrom === 'yeah' || isFrom === 'y'){
-  alert('If by LA, you mean Louisiana then you are right!');
-  counter++;
-} else if (isFrom === 'no' || isFrom === 'nope' || isFrom === 'n'){
-  alert('Correct, I am from Louisiana (LA) haha!');
-  counter++;
-} else {
-  alert('Please stick to "Yes" or "No" answers.');
+function question_1 () {
+  let isFrom = prompt('Am I originally from LA?').toLowerCase();
+
+  if(isFrom === 'yes' || isFrom === 'yeah' || isFrom === 'y'){
+    alert('If by LA, you mean Louisiana then you are right!');
+    counter++;
+  } else if (isFrom === 'no' || isFrom === 'nope' || isFrom === 'n'){
+    alert('Correct, I am from Louisiana (LA) haha!');
+    counter++;
+  } else {
+    alert('Please stick to "Yes" or "No" answers.');
+  }
 }
-
 
 
 let onlyChild = prompt('Am I an only child?').toLowerCase();
