@@ -81,38 +81,38 @@ function question_5() {
   }
 }
 
-
-
-
 //Guessing Game - Question 6
-let rightNum = 7;
-let numGuess = prompt(`${userName}, please guess a number from 1 to 10.`);
-let numAttempts = 4;
-let i = 1;
-
-numGuess = parseInt(numGuess);
-
-while(i < 5){
-  if (numGuess === rightNum){
-    alert(`${numGuess} is the correct answer! Well done.`);
-    counter++;
-    break;
-  }else if(i < numAttempts){
-    if(numGuess < rightNum){
-      alert(`${userName}, your guess is too low. You have ${numAttempts - i} attempts left.`);  
+function question_6() {
+  let rightNum = 7;
+  let numGuess = prompt(`${userName}, please guess a number from 1 to 10.`);
+  let numAttempts = 4;
+  let i = 1;
+  
+  numGuess = parseInt(numGuess);
+  
+  while(i < 5){
+    if (numGuess === rightNum){
+      alert(`${numGuess} is the correct answer! Well done.`);
+      counter++;
+      break;
+    } else if(i < numAttempts){
+      if(numGuess < rightNum){
+        alert(`${userName}, your guess is too low. You have ${numAttempts - i} attempts left.`);  
+      }
+      if(numGuess > rightNum){
+        alert(`${userName}, your guess is too high. You have ${numAttempts - i} attempts left`);
+      }
+      numGuess = prompt(`${userName}, please guess a number from 1 to 10.`);
+      numGuess = parseInt(numGuess);
+    } else{
+      alert(`Sorry, you are out of attempts, the correct answer was ${rightNum}.`);
+      break;
     }
-    if(numGuess > rightNum){
-      alert(`${userName}, your guess is too high. You have ${numAttempts - i} attempts left`);
-    }
-    numGuess = prompt(`${userName}, please guess a number from 1 to 10.`);
-    numGuess = parseInt(numGuess);
-
-  }else{
-    alert(`Sorry, you are out of attempts, the correct answer was ${rightNum}.`);
-    break;
+    i++;
   }
-  i++;
 }
+
+
 
 //Question 7 - Guess a Favorite food of mine
 let favFoods = ['sushi','brisket','pizza','tacos','icecream','steak','nutella','oreo','crepes','pancakes'];
