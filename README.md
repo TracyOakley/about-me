@@ -1,12 +1,12 @@
-# LAB - 2
+# LAB - 4
 
 ## About-Me
 
 I build a website to inform other about myself and also show off some javascript functionality.  
 
-#### Author: Tracy Oakley  
+#### Author: Tracy Oakley, Don Choi(driver)
 
-#### Links and Resources   
+#### Links and Resources
 
 + [https://codefellows.github.io/code-201-guide/curriculum/class-02/project-setup](https://codefellows.github.io/code-201-guide/curriculum/class-02/project-setup)
 + 
