@@ -8,6 +8,11 @@ let counter = 0;
 
 question_1();
 question_2();
+question_3();
+question_4();
+question_5();
+question_6();
+question_7
 
 function question_1 () {
   let isFrom = prompt('Am I originally from LA?').toLowerCase();
@@ -37,17 +42,20 @@ function question_2(){
 }
 
 
+function question_3() {
+  let visitForeign = prompt('Have I ever been to a foreign country?').toLowerCase();
 
-let visitForeign = prompt('Have I ever been to a foreign country?').toLowerCase();
-
-if(visitForeign === 'yes' || visitForeign === 'yeah' || visitForeign === 'y'){
-  alert('Nope, unless you say Guam is a foreign country.');
-} else if (visitForeign === 'no' || visitForeign === 'nope' || visitForeign === 'n'){
-  alert('Correct, I am boring but one day...');
-  counter++;
-} else {
-  alert('Please stick to "Yes" or "No" answers.');
+  if(visitForeign === 'yes' || visitForeign === 'yeah' || visitForeign === 'y'){
+    alert('Nope, unless you say Guam is a foreign country.');
+  } else if (visitForeign === 'no' || visitForeign === 'nope' || visitForeign === 'n'){
+    alert('Correct, I am boring but one day...');
+    counter++;
+  } else {
+    alert('Please stick to "Yes" or "No" answers.');
+  }
 }
+
+
 
 
 let liveNow = prompt('Do I live in Florida currently?').toLowerCase();
