@@ -81,19 +81,21 @@ function question_5(){
   }
 }
 
+function question_6() {
+  let wasNavy = prompt('Was I ever in the Navy?').toLowerCase();
 
-
-
-let wasNavy = prompt('Was I ever in the Navy?').toLowerCase();
-
-if(wasNavy === 'yes' || wasNavy === 'yeah' || wasNavy === 'y'){
-  alert('Correct, I was on a Boomer in Washington State.');
-  counter++;
-} else if (wasNavy === 'no' || wasNavy === 'nope' || wasNavy === 'n'){
-  alert('Incorrect, I was a Submarine Officer on the USS Nevada.');
-} else {
-  alert('Please stick to "Yes" or "No" answers.');
+  if(wasNavy === 'yes' || wasNavy === 'yeah' || wasNavy === 'y'){
+    alert('Correct, I was on a Boomer in Washington State.');
+    counter++;
+  } else if (wasNavy === 'no' || wasNavy === 'nope' || wasNavy === 'n'){
+    alert('Incorrect, I was a Submarine Officer on the USS Nevada.');
+  } else {
+    alert('Please stick to "Yes" or "No" answers.');
+  }
 }
+
+
+
 
 //Guessing Game - Question 6
 let rightNum = 7;
