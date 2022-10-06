@@ -112,34 +112,35 @@ function question_6() {
   }
 }
 
-
-
 //Question 7 - Guess a Favorite food of mine
-let favFoods = ['sushi','brisket','pizza','tacos','icecream','steak','nutella','oreo','crepes','pancakes'];
-let guessFood = '';
-let correctFood = false;
-let guessLeft = 6;
-
-guessFood = prompt('Please try and guess one of my Favorite Foods.').toLowerCase();
-
-
-for(let i = 0; i < guessLeft; i++){
-  for(let j = 0; j <favFoods.length; j++){
-    if(favFoods[j] === guessFood){
-      correctFood= true;
+function question_7() {
+  let favFoods = ['sushi','brisket','pizza','tacos','icecream','steak','nutella','oreo','crepes','pancakes'];
+  let guessFood = '';
+  let correctFood = false;
+  let guessLeft = 6;
+  
+  guessFood = prompt('Please try and guess one of my Favorite Foods.').toLowerCase();
+  
+  for(let i = 0; i < guessLeft; i++){
+    for(let j = 0; j <favFoods.length; j++){
+      if(favFoods[j] === guessFood){
+        correctFood= true;
+      }
+    }
+    if(correctFood === true){
+      alert(`You are correct! ${guessFood} is one of my favorite foods!`);
+      counter++;
+      break;
+    }else if(i< guessLeft-1){
+      alert(`That is incorrect. You have ${guessLeft - i - 1} attempts left.`);
+      guessFood = prompt('Please try and guess one of my Favorite Foods.').toLowerCase();
+    }else{
+      alert('Sorry, you are out of attempts.');
     }
   }
-  if(correctFood === true){
-    alert(`You are correct! ${guessFood} is one of my favorite foods!`);
-    counter++;
-    break;
-  }else if(i< guessLeft-1){
-    alert(`That is incorrect. You have ${guessLeft - i - 1} attempts left.`);
-    guessFood = prompt('Please try and guess one of my Favorite Foods.').toLowerCase();
-  }else{
-    alert('Sorry, you are out of attempts.');
-  }
 }
+
+
 
 
 
