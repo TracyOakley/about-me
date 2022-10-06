@@ -141,10 +141,6 @@ function question_7() {
 }
 
 
-
-
-
-
 alert(`${userName}, you got ${counter} of 7 questions correct.`);
 
 alert(`${userName}, thanks for playing!`);
