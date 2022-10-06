@@ -68,20 +68,7 @@ function question_4() {
   }
 }
 
-function question_5(){
-  let liveNow = prompt('Do I live in Florida currently?').toLowerCase();
-
-  if(liveNow === 'yes' || liveNow === 'yeah' || liveNow === 'y'){
-    alert('Correct, I like the beach.');
-    counter++;
-  } else if (liveNow === 'no' || liveNow === 'nope' || liveNow === 'n'){
-    alert('Incorrect, I do live in Florida');
-  } else {
-    alert('Please stick to "Yes" or "No" answers.');
-  }
-}
-
-function question_6() {
+function question_5() {
   let wasNavy = prompt('Was I ever in the Navy?').toLowerCase();
 
   if(wasNavy === 'yes' || wasNavy === 'yeah' || wasNavy === 'y'){
