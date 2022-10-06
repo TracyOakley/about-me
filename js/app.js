@@ -7,6 +7,7 @@ alert(userName + ', welcome to my (Tracy Oakley) website!');
 let counter = 0;
 
 question_1();
+question_2();
 
 function question_1 () {
   let isFrom = prompt('Am I originally from LA?').toLowerCase();
@@ -22,17 +23,20 @@ function question_1 () {
   }
 }
 
+function question_2(){
+  let onlyChild = prompt('Am I an only child?').toLowerCase();
 
-let onlyChild = prompt('Am I an only child?').toLowerCase();
-
-if(onlyChild === 'yes' || onlyChild === 'yeah' || onlyChild === 'y'){
-  alert('Nope, I am the 4th of 7 kids.');
-} else if (onlyChild === 'no' || onlyChild === 'nope' || onlyChild === 'n'){
-  alert('Correct, I am the 4th of 7 kids.');
-  counter++;
-} else {
-  alert('Please stick to "Yes" or "No" answers.');
+  if(onlyChild === 'yes' || onlyChild === 'yeah' || onlyChild === 'y'){
+    alert('Nope, I am the 4th of 7 kids.');
+  } else if (onlyChild === 'no' || onlyChild === 'nope' || onlyChild === 'n'){
+    alert('Correct, I am the 4th of 7 kids.');
+    counter++;
+  } else {
+    alert('Please stick to "Yes" or "No" answers.');
+  }
 }
+
+
 
 let visitForeign = prompt('Have I ever been to a foreign country?').toLowerCase();
 
